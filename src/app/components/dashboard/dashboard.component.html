@@ -1,0 +1,15 @@
+<div class="container">
+  <ng-template [ngIf]="currentNumber" [ngIfElse]="empty">
+    <div [className]="currentNumber.figure + ' centered'">
+      <h1>{{currentNumber.number}}</h1>
+    </div>
+  </ng-template>
+  <ng-template #empty>
+    <h2 class="centered">Click generate!!! :)</h2>
+  </ng-template>
+
+  <div class="block-control">
+    <button class="history-btn" mat-raised-button (click)="getHistory()">History</button>
+    <button class="generate-btn" mat-raised-button	color="primary" (click)="randomizeNumber()">Generate!</button>
+  </div>
+</div>

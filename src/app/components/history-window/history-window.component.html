@@ -1,0 +1,16 @@
+<h1>History</h1>
+<table class="history-table" *ngIf="data.length; else empty">
+  <td>
+    <tr class="headers">
+      <td>Time</td>
+      <td>Number</td>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td class="time">{{ item.time }}</td>
+      <td class="number">{{ item.number }}</td>
+    </tr>
+  </td>
+</table>
+<ng-template #empty>
+  <h3>History is empty</h3>
+</ng-template>

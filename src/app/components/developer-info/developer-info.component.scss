@@ -1,0 +1,16 @@
+.container {
+  .dev-info {
+    flex: 1 0 0;
+    max-width: 720px;
+  }
+  .info-table {
+    td {
+      padding: 5px;
+      text-align: start;
+      &.info-property {
+        font-weight: bold;
+        text-align: start;
+      }
+    }
+  }
+}
